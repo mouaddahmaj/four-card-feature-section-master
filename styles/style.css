@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    
+}
+a{
+    color:hsl(0, 78%, 62%) ;
+    color: hsl(180, 62%, 55%);
+    color:hsl(34, 97%, 64%) ;
+    color:hsl(212, 86%, 64%) ;
+
+
+
+    color:  hsl(234, 12%, 34%);
+    color: hsl(229, 6%, 66%);
+    color: hsl(0, 0%, 98%);
+}
+body{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(230, 14%, 92%);
+}
+.partie-globale{
+    background-color:hsl(230, 14%, 92%) ;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    color:hsl(234, 12%, 34%) ;
+
+
+}
+.partie-haut{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin-bottom:60px ;
+
+}
+.partie-haut>div>div:first-child {
+    font-size: 24px;
+    margin-bottom:10px ;
+
+    
+}
+.partie-haut>div>div:first-child>p:first-child{
+    font-weight: normal;
+}
+.partie-haut>div>div:first-child>p:last-child{
+    font-weight: bold;
+}
+.partie-haut>div>div:last-child{
+    font-size: 12px;
+}
+.partie-bas{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.partie-bas>div{
+    width:32%;
+    
+}
+.partie-bas>div:first-child, .partie-bas>div:last-child, .partie-bas>div:first-child+div>div{
+    background-color:hsl(230, 14%, 92%) ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px   hsl(229, 6%, 66%);
+}
+.partie-bas>div:first-child>div,.partie-bas>div:last-child>div {
+    width: 90%;
+    margin:  auto ;
+    padding: 15px 0;
+    height: 170px;
+    
+
+}
+.partie-bas>div:first-child>div ,.partie-bas>div:last-child>div {
+    position: relative;
+}
+.partie-bas>div:first-child{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.partie-bas>div:first-child+div>div:first-child{
+    border-top: 4px solid hsl(0, 78%, 62%);
+
+}
+.partie-bas>div:first-child+div>div:last-child{
+    border-top: 4px solid hsl(34, 97%, 64%);
+
+}
+.partie-bas>div:last-child{
+    border-top: 4px solid hsl(212, 86%, 64%);
+
+}
+.partie-bas>div:first-child+div>div:first-child{
+    margin-bottom: 20px;
+
+}
+
+.partie-bas>div:first-child+div>div div{
+    width: 90%;
+    padding: 15px 0;
+    margin: auto;
+    height: 170px;
+    position: relative;
+}
+
+object{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+.partie-bas p{
+    margin: 5px 0;
+    width: 70%;
+    font-size: 12px;
+}
+footer{
+   margin-top: 30px;
+}
+  @media screen and (max-width:475px) {
+    body{
+        display: block;
+
+    }
+    .partie-globale{
+        width: 100%;
+    }
+    .partie-haut{
+        width: 100%;
+    }
+    .partie-haut>div{
+        width: 90%;
+        margin: auto;
+    }
+    .partie-bas{
+        flex-direction: column;
+        width: 100%;
+    }
+    .partie-bas>div{
+        width: 90%;
+    }
+    
+    .partie-bas>div:first-child+div{
+        margin: 20px 0;
+    }
+  }
